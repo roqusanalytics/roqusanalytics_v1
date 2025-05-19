@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert SVG to PNG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .preview {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        canvas {
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #8B5CF6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #7C3AED;
+        }
+        .instructions {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SVG to PNG Converter for Favicon</h1>
+    
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <ol>
+            <li>This tool will help you convert the SVG favicon to PNG format.</li>
+            <li>Click the "Convert SVG to PNG" button below.</li>
+            <li>Right-click on the generated PNG image and select "Save Image As..."</li>
+            <li>Save the file as "favicon-32x32.png" and "favicon-16x16.png" in the public folder.</li>
+            <li>Use an online ICO converter to create favicon.ico from the PNG files.</li>
+        </ol>
+    </div>
+    
+    <div class="container">
+        <div class="preview">
+            <div>
+                <h3>Original SVG (32x32)</h3>
+                <img src="../public/favicon.svg" width="32" height="32" alt="Original SVG">
+            </div>
+            
+            <div>
+                <h3>PNG Preview (32x32)</h3>
+                <canvas id="canvas32" width="32" height="32"></canvas>
+            </div>
+            
+            <div>
+                <h3>PNG Preview (16x16)</h3>
+                <canvas id="canvas16" width="16" height="16"></canvas>
+            </div>
+        </div>
+        
+        <button id="convertBtn">Convert SVG to PNG</button>
+        
+        <div id="downloadLinks"></div>
+    </div>
+    
+    <script>
+        document.getElementById('convertBtn').addEventListener('click', function() {
+            const img = new Image();
+            img.onload = function() {
+                // Convert to 32x32 PNG
+                const canvas32 = document.getElementById('canvas32');
+                const ctx32 = canvas32.getContext('2d');
+                ctx32.clearRect(0, 0, 32, 32);
+                ctx32.drawImage(img, 0, 0, 32, 32);
+                
+                // Convert to 16x16 PNG
+                const canvas16 = document.getElementById('canvas16');
+                const ctx16 = canvas16.getContext('2d');
+                ctx16.clearRect(0, 0, 16, 16);
+                ctx16.drawImage(img, 0, 0, 16, 16);
+                
+                // Create download links
+                const downloadLinks = document.getElementById('downloadLinks');
+                downloadLinks.innerHTML = '';
+                
+                const link32 = document.createElement('a');
+                link32.href = canvas32.toDataURL('image/png');
+                link32.download = 'favicon-32x32.png';
+                link32.textContent = 'Download 32x32 PNG';
+                link32.style.display = 'block';
+                link32.style.margin = '10px 0';
+                downloadLinks.appendChild(link32);
+                
+                const link16 = document.createElement('a');
+                link16.href = canvas16.toDataURL('image/png');
+                link16.download = 'favicon-16x16.png';
+                link16.textContent = 'Download 16x16 PNG';
+                link16.style.display = 'block';
+                link16.style.margin = '10px 0';
+                downloadLinks.appendChild(link16);
+            };
+            img.src = '../public/favicon.svg';
+        });
+    </script>
+</body>
+</html>

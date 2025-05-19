@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .preview {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .preview-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        img {
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+            margin-bottom: 10px;
+        }
+        .browser-preview {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .browser-tab {
+            display: flex;
+            align-items: center;
+            background-color: #e9e9e9;
+            padding: 8px 16px;
+            border-radius: 8px 8px 0 0;
+            width: fit-content;
+        }
+        .browser-tab img {
+            margin-right: 8px;
+            margin-bottom: 0;
+        }
+        .browser-content {
+            padding: 16px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+    </style>
+    
+    <!-- Favicon links for testing -->
+    <link rel="icon" href="../public/favicon.ico" sizes="any" />
+    <link rel="icon" href="../public/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../public/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="../public/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../public/apple-touch-icon.png" />
+</head>
+<body>
+    <h1>Favicon Preview</h1>
+    
+    <p>Below you can see all the favicon files that have been generated:</p>
+    
+    <div class="container">
+        <div class="preview">
+            <div class="preview-item">
+                <img src="../public/favicon.svg" width="64" height="64" alt="SVG Favicon">
+                <span>favicon.svg</span>
+            </div>
+            
+            <div class="preview-item">
+                <img src="../public/favicon.ico" width="32" height="32" alt="ICO Favicon">
+                <span>favicon.ico</span>
+            </div>
+            
+            <div class="preview-item">
+                <img src="../public/favicon-16x16.png" width="16" height="16" alt="16x16 Favicon" style="width: 16px; height: 16px;">
+                <span>favicon-16x16.png</span>
+            </div>
+            
+            <div class="preview-item">
+                <img src="../public/favicon-32x32.png" width="32" height="32" alt="32x32 Favicon" style="width: 32px; height: 32px;">
+                <span>favicon-32x32.png</span>
+            </div>
+            
+            <div class="preview-item">
+                <img src="../public/apple-touch-icon.png" width="64" height="64" alt="Apple Touch Icon">
+                <span>apple-touch-icon.png</span>
+            </div>
+        </div>
+        
+        <div class="browser-preview">
+            <h2>Browser Tab Preview</h2>
+            <div class="browser-tab">
+                <img src="../public/favicon.ico" width="16" height="16" alt="Favicon in tab">
+                <span>RoqusAnalytics - Duomenų analitikos sprendimai</span>
+            </div>
+            <div class="browser-content">
+                <p>This is how your favicon will appear in a browser tab.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 40px;">
+        <h2>Implementation</h2>
+        <p>The following HTML code has been added to your index.html file:</p>
+        <pre style="background-color: #f5f5f5; padding: 15px; border-radius: 4px; overflow-x: auto;">
+&lt;link rel="icon" href="/favicon.ico" sizes="any" /&gt;
+&lt;link rel="icon" href="/favicon.svg" type="image/svg+xml" /&gt;
+&lt;link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" /&gt;
+&lt;link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" /&gt;
+&lt;link rel="apple-touch-icon" href="/apple-touch-icon.png" /&gt;
+        </pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert PNG to ICO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .preview {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        img {
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+        }
+        .instructions {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .resources {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e6f7ff;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PNG to ICO Converter for Favicon</h1>
+    
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <p>Since we've already generated the PNG files, you need to convert them to ICO format. Here are the steps:</p>
+        <ol>
+            <li>Use one of the online ICO converters listed below.</li>
+            <li>Upload both favicon-16x16.png and favicon-32x32.png files.</li>
+            <li>Download the generated ICO file and save it as "favicon.ico" in the public folder.</li>
+        </ol>
+    </div>
+    
+    <div class="container">
+        <div class="preview">
+            <div>
+                <h3>favicon-16x16.png</h3>
+                <img src="../public/favicon-16x16.png" alt="16x16 Favicon">
+            </div>
+            
+            <div>
+                <h3>favicon-32x32.png</h3>
+                <img src="../public/favicon-32x32.png" alt="32x32 Favicon">
+            </div>
+            
+            <div>
+                <h3>apple-touch-icon.png</h3>
+                <img src="../public/apple-touch-icon.png" width="64" height="64" alt="Apple Touch Icon">
+            </div>
+        </div>
+    </div>
+    
+    <div class="resources">
+        <h2>Online ICO Converters:</h2>
+        <ul>
+            <li><a href="https://www.icoconverter.com/" target="_blank">ICO Converter</a></li>
+            <li><a href="https://convertio.co/png-ico/" target="_blank">Convertio</a></li>
+            <li><a href="https://favicon.io/favicon-converter/" target="_blank">Favicon.io</a></li>
+        </ul>
+    </div>
+</body>
+</html>

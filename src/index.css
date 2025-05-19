@@ -1,0 +1,239 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 5%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 265 84% 63%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 270 76% 75%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 5% 64.9%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-nexos-purple/20 selection:text-white;
+  }
+
+  body {
+    @apply antialiased;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa, #f0f4f8, #edf2ff);
+    color: #262B30;
+  }
+
+  /* Pagrindinė teksto spalva visai svetainei */
+  h1, h2, h3, h4, h5, h6, p, span, a, li, button, input, textarea, select, label, div {
+    color: #262B30;
+  }
+
+  /* Išsaugoti violetinę spalvą */
+  .text-nexos-purple, .text-purple-500, .text-indigo-500, .text-indigo-600 {
+    color: #8B5CF6 !important;
+  }
+
+  /* Išsaugoti violetinę spalvą ikonoms */
+  svg.text-nexos-purple, svg.text-purple-500, svg.text-indigo-500, svg.text-indigo-600 {
+    color: #8B5CF6 !important;
+  }
+
+  html {
+    @apply scroll-smooth;
+    min-height: 100%;
+  }
+
+  /* Papildomas gradiento efektas */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.1) 0%, rgba(139, 92, 246, 0.05) 50%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+@layer components {
+  .nexos-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .nexos-heading {
+    @apply text-[40px] font-bold tracking-tight text-gray-800;
+  }
+
+  .nexos-subheading {
+    @apply text-[20px] max-w-3xl;
+    color: #262B30;
+  }
+
+  .nexos-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600;
+    color: transparent !important;
+  }
+
+  /* Standartinis mygtukų dydis visai svetainei */
+  .nexos-button-standard {
+    @apply px-8 py-4 rounded-xl font-medium text-base transition-all transform hover:translate-y-[-2px];
+  }
+
+  .nexos-button-primary {
+    @apply bg-gradient-to-r from-blue-500 to-blue-700 hover:opacity-90 nexos-button-standard hover:shadow-lg;
+    color: white !important;
+  }
+
+  .nexos-button-secondary {
+    @apply bg-transparent nexos-button-standard relative;
+    color: #262B30 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    position: relative !important;
+  }
+
+  .nexos-button-secondary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.375rem;
+    padding: 1.5px;
+    background: linear-gradient(to right, #4A89F3, #61a0ff);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .nexos-button-secondary:hover {
+    color: #3B82F6 !important;
+    background: rgba(74, 137, 243, 0.05) !important;
+  }
+
+  .nexos-button-secondary:active {
+    background: rgba(74, 137, 243, 0.1) !important;
+  }
+
+  .nexos-card {
+    @apply bg-white/80 border border-gray-200 rounded-xl p-6 backdrop-blur-sm shadow-sm hover:shadow-md transition-all;
+  }
+
+  .nexos-glow {
+    @apply relative;
+  }
+
+  .nexos-glow::before {
+    @apply content-[''] absolute -inset-0.5 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg opacity-20 blur pointer-events-none;
+  }
+
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-lg border border-gray-200/50 shadow-sm;
+  }
+
+  /* Įprasto teksto spalva */
+  .nexos-text {
+    color: #262B30;
+  }
+
+  /* Aprašymų teksto spalva */
+  .text-gray-400, .nexos-description {
+    color: #7A8999;
+  }
+
+  /* Aprašymų teksto spalva kortelėse */
+  .nexos-card p {
+    color: #7A8999;
+  }
+
+  /* HowItWorks puslapio aprašymų spalva */
+  .process-description {
+    color: #262B30;
+  }
+
+  /* Įkrovimo juostos stiliai */
+
+  /* Susisiekti mygtuko animacija ir šešėlis */
+  .nexos-contact-button {
+    transition: all 0.3s ease-in-out !important;
+    box-shadow: 0 4px 14px rgba(74, 137, 243, 0.15) !important;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nexos-contact-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 70%);
+    transform: translateX(-100%);
+    transition: all 0.6s ease;
+  }
+
+  .nexos-contact-button:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 20px rgba(74, 137, 243, 0.3) !important;
+  }
+
+  .nexos-contact-button:hover::after {
+    transform: translateX(100%);
+  }
+
+  .nexos-contact-button:active {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 16px rgba(74, 137, 243, 0.25) !important;
+  }
+
+  /* Shimmer teksto animacija */
+  .nexos-shimmer-text {
+    position: relative;
+    background: linear-gradient(90deg, #262B30, #4A89F3, #61a0ff, #4A89F3, #262B30);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    animation: shimmer 3s ease-in-out infinite;
+    transition: all 0.3s ease;
+  }
+
+  .nexos-shimmer-text:hover {
+    background-size: 200% 100%;
+    animation-duration: 1.5s;
+  }
+}
