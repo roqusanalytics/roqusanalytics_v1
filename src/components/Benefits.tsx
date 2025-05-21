@@ -253,9 +253,11 @@ const Benefits = () => {
   }, [visibleItems]);
 
   return (
-    <section id="benefits" className="py-20 md:py-28 relative" style={{ background: 'linear-gradient(358deg, rgba(255, 255, 255, 1) 0%, rgba(221, 232, 240, 1) 75%, rgba(237, 201, 240, 1) 100%)' }}>
+    <section id="benefits" className="py-20 md:py-28 relative">
+      <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(350deg,rgba(142,49,204,1)_0%,rgba(119,134,252,1)_0%,rgba(255,255,255,1)_100%,rgba(162,60,230,1)_100%)] z-0"></div>
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <div className="absolute top-[30%] left-[10%] w-[400px] h-[400px] bg-nexos-purple/10 rounded-full blur-[120px] animate-pulse-glow"></div>
+        <div className="absolute top-[30%] right-[20%] w-[500px] h-[500px] bg-[#7786fc]/20 rounded-full blur-[150px] animate-pulse-glow"></div>
+        <div className="absolute bottom-[20%] left-[30%] w-[300px] h-[300px] bg-[#7786fc]/30 rounded-full blur-[100px] animate-pulse-glow"></div>
       </div>
 
       <div className="nexos-container relative z-10">

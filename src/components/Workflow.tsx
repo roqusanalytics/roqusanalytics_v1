@@ -121,10 +121,10 @@ const Workflow = () => {
 
   return (
     <section id="workflow" className="py-20 md:py-28 relative">
-      <div className="absolute top-0 left-0 w-full h-full bg-[#8e31cc] bg-[linear-gradient(350deg,rgba(142,49,204,1)_0%,rgba(119,134,252,1)_0%,rgba(255,255,255,1)_100%,rgba(162,60,230,1)_100%)] z-0"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(350deg,rgba(142,49,204,1)_0%,rgba(119,134,252,1)_0%,rgba(255,255,255,1)_100%,rgba(162,60,230,1)_100%)] z-0"></div>
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <div className="absolute -top-[10%] left-[50%] w-[300px] h-[300px] bg-[#7786fc]/20 rounded-full blur-[80px] animate-pulse-glow"></div>
-        <div className="absolute bottom-[20%] right-[30%] w-[400px] h-[400px] bg-[#7786fc]/30 rounded-full blur-[100px] animate-pulse-glow"></div>
+        <div className="absolute top-[30%] right-[20%] w-[500px] h-[500px] bg-[#7786fc]/20 rounded-full blur-[150px] animate-pulse-glow"></div>
+        <div className="absolute bottom-[20%] left-[30%] w-[300px] h-[300px] bg-[#7786fc]/30 rounded-full blur-[100px] animate-pulse-glow"></div>
       </div>
 
       <div id="workflow-section" className="nexos-container relative z-10">
