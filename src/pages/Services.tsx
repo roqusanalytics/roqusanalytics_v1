@@ -101,7 +101,7 @@ const Services = () => {
             <div id="powerbi-kurimas" className="mb-20">
               <h2 className="text-3xl font-bold mb-6 text-[#262B30]">Power BI Ataskaitų ir Dashboardų Kūrimas</h2>
               <p className="text-[#262B30] mb-6">
-                „Power BI Ataskaitų ir Dashboard'ų Kūrimas" – tai paslauga, kurios metu analizuojame jūsų verslo poreikius, sujungiame reikiamus duomenų šaltinius (CRM, ERP, Excel, kt.) ir sukuriame lengvai suprantamas, interaktyvias ataskaitas. Taip užtikriname, kad realiu laiku matysite svarbiausius veiklos rodiklius (KPI), kurių pagrindu galėsite priimti greitesnius ir tikslesnius sprendimus.
+                „Power BI Ataskaitų ir Dashboard'ų Kūrimas" – tai paslauga, kurios metu analizuojame jūsų verslo duomenis, prijungiame reikiamus duomenų šaltinius iš (CRM, ERP, SQL, kt.) ir sukuriame lengvai suprantamas, interaktyvias ataskaitas. Taip užtikriname, kad realiu laiku matysite svarbiausius veiklos rodiklius (KPI), kurių pagrindu galėsite priimti greitesnius ir tikslesnius sprendimus.
               </p>
               <p className="text-[#262B30] mb-6">
                 Dirbame projekto principu: išsiaiškiname jūsų poreikius, sujungiame ir apdorojame duomenis, kuriame individualizuotas ataskaitas ir dashboardus, bei apmokome jūsų komandą.

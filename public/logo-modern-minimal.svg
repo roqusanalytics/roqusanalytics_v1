@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fonas (jei reikia) -->
+  <rect width="240" height="60" rx="4" fill="#F5F7FF" opacity="0">
+    <animate attributeName="opacity" values="0;0;0" dur="0.5s" begin="0s" fill="freeze" />
+  </rect>
+  
+  <!-- Minimalistinis kubas/kristalo elementas -->
+  <g transform="translate(30, 10) scale(0.8)">
+    <!-- Pagrindinis šešiakampis - minimalistinis -->
+    <path d="M25 5L45 15V35L25 45L5 35V15L25 5Z" fill="url(#crystal-gradient)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="1s" begin="0s" fill="freeze" />
+    </path>
+    
+    <!-- Minimalistinės linijos -->
+    <path d="M25 5L25 45M5 15L45 15M5 35L45 35" stroke="white" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="60" stroke-dashoffset="60">
+      <animate attributeName="stroke-dashoffset" from="60" to="0" dur="2s" begin="0.5s" fill="freeze" />
+    </path>
+    
+    <!-- Duomenų vizualizacijos elementai - minimalistiniai -->
+    <!-- Linijinis grafikas -->
+    <path d="M10 30L20 20L30 25L40 15" stroke="white" stroke-width="1.5" stroke-opacity="0" fill="none" stroke-dasharray="60" stroke-dashoffset="60">
+      <animate attributeName="stroke-opacity" values="0;0.8" dur="0.5s" begin="1.5s" fill="freeze" />
+      <animate attributeName="stroke-dashoffset" from="60" to="0" dur="1.5s" begin="1.5s" fill="freeze" />
+    </path>
+    
+    <!-- Duomenų taškai - minimalistiniai -->
+    <circle cx="10" cy="30" r="1.5" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.7s" fill="freeze" />
+    </circle>
+    <circle cx="20" cy="20" r="1.5" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.9s" fill="freeze" />
+    </circle>
+    <circle cx="30" cy="25" r="1.5" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.1s" fill="freeze" />
+    </circle>
+    <circle cx="40" cy="15" r="1.5" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.3s" fill="freeze" />
+    </circle>
+    
+    <!-- Pulsuojantis duomenų centras - minimalistinis -->
+    <circle cx="25" cy="25" r="2" fill="white" opacity="0">
+      <animate attributeName="opacity" values="0;0.2;0.5;0.2" dur="3s" begin="2.5s" repeatCount="indefinite" />
+      <animate attributeName="r" values="0;2;3;2" dur="3s" begin="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Vertikali linija - minimalistinė -->
+  <line x1="80" y1="20" x2="80" y2="40" stroke="#2D3748" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1s" fill="freeze" />
+  </line>
+  
+  <!-- Tekstas "Roqus analytics" - minimalistinis šriftas -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="1.2s" fill="freeze" />
+    
+    <!-- Roqus - minimalistinis šriftas -->
+    <path d="M95 30V20H100C102 20 103 21 103 22.5C103 24 102 25 100 25H103L105 30" 
+          stroke="#2D3748" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="30" stroke-dashoffset="30">
+      <animate attributeName="stroke-dashoffset" from="30" to="0" dur="1s" begin="1.2s" fill="freeze" />
+    </path>
+    <path d="M110 30C108 30 106 28 106 25C106 22 108 20 110 20C112 20 114 22 114 25C114 28 112 30 110 30Z" 
+          stroke="#2D3748" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="30" stroke-dashoffset="30">
+      <animate attributeName="stroke-dashoffset" from="30" to="0" dur="1s" begin="1.4s" fill="freeze" />
+    </path>
+    <path d="M120 30C118 30 116 28 116 25C116 22 118 20 120 20C122 20 124 22 124 25V30" 
+          stroke="#2D3748" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="30" stroke-dashoffset="30">
+      <animate attributeName="stroke-dashoffset" from="30" to="0" dur="1s" begin="1.6s" fill="freeze" />
+    </path>
+    <path d="M128 30V20H136C138 20 140 22 140 25C140 28 138 30 136 30H128Z" 
+          stroke="#2D3748" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="30" stroke-dashoffset="30">
+      <animate attributeName="stroke-dashoffset" from="30" to="0" dur="1s" begin="1.8s" fill="freeze" />
+    </path>
+    <path d="M144 30V20H148C150 20 152 22 152 25C152 28 150 30 148 30H144Z" 
+          stroke="#2D3748" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="30" stroke-dashoffset="30">
+      <animate attributeName="stroke-dashoffset" from="30" to="0" dur="1s" begin="2s" fill="freeze" />
+    </path>
+    
+    <!-- analytics - minimalistinis šriftas -->
+    <text x="95" y="40" font-family="Arial, sans-serif" font-size="10" fill="#2D3748" opacity="0" font-weight="300" letter-spacing="0.5">
+      <animate attributeName="opacity" values="0;0.9" dur="1s" begin="2.2s" fill="freeze" />
+      analytics
+    </text>
+  </g>
+  
+  <!-- Gradientai -->
+  <defs>
+    <linearGradient id="crystal-gradient" x1="0" y1="0" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A78BFA">
+        <animate attributeName="stop-color" values="#A78BFA;#8B5CF6;#A78BFA" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="1" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#6D28D9;#7C3AED" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+  </defs>
+</svg>

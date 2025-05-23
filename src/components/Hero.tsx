@@ -20,14 +20,23 @@ const Hero = () => {
 
   return (
     <section className="pt-28 pb-20 md:pt-36 md:pb-24 overflow-hidden relative">
-      {/* Background gradient effects */}
+      {/* Background image */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+          backgroundImage: 'url("/images/hero-background.png")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          filter: 'brightness(1.1) contrast(1.1)'
+        }}></div>
+        <div className="absolute inset-0 bg-nexos-dark/30"></div>
+        {/* Additional overlay effects */}
         <div className="absolute -top-[30%] -left-[10%] w-[500px] h-[500px] bg-nexos-purple/20 rounded-full blur-[120px] animate-pulse-glow"></div>
         <div className="absolute -bottom-[20%] -right-[10%] w-[400px] h-[400px] bg-nexos-purple/15 rounded-full blur-[100px] animate-pulse-glow"></div>
       </div>
 
       <div className="nexos-container relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-right max-w-4xl ml-auto mr-0">
           <div
             className={`transition-all duration-500 transform ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
@@ -40,12 +49,12 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="nexos-subheading mx-auto mb-8 text-[24px]">
+            <p className="nexos-subheading mb-8 text-[24px] ml-auto max-w-2xl">
               Roqus analytics transformuoja duomenis į vertingas įžvalgas ir ataskaitas
               aukščiausio lygio vadovams.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-end">
               <Link to="/contact-sales">
                 <Button className="nexos-button-primary nexos-contact-button w-full md:w-auto">
                   Susisiekti
@@ -64,7 +73,7 @@ const Hero = () => {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            <div className="relative mx-auto">
+            <div className="relative ml-auto mr-0 max-w-3xl">
               <div className="nexos-glow">
                 <div className="relative z-10 rounded-xl overflow-hidden border border-nexos-dark-lighter shadow-2xl">
                   <div className="bg-nexos-dark-light p-3 border-b border-nexos-dark-lighter flex items-center gap-2">
@@ -96,11 +105,11 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="mt-10 text-center text-sm text-gray-400">
+          <div className="mt-10 text-right text-sm text-gray-400">
             Duomenys: Jūsų konkurencinis pranašumas
           </div>
 
-          <div className="mt-4 text-center text-gray-300 max-w-3xl mx-auto">
+          <div className="mt-4 text-right text-gray-300 max-w-2xl ml-auto">
             <p>
               Pardavimai visada buvo žmonių verslas ir taip išliks ateityje. Tačiau norint pasiekti geriausius rezultatus kiekviename organizacijos sluoksnyje, sprendimų priėmėjai sistemingai stiprina darbuotojų galią naudoti duomenis, analitiką ir technologijas.
             </p>

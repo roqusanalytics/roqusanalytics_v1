@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+# Roqus Analytics - Duomenų analitikos svetainė
 
-## Project info
+## Projekto informacija
 
-**URL**: https://lovable.dev/projects/c7313f04-12f2-4e1a-b5e7-2080d22e4aea
+Roqus Analytics yra moderni duomenų analitikos paslaugų svetainė, skirta padėti verslams transformuoti duomenis į vertingas įžvalgas ir ataskaitas. Svetainė sukurta naudojant šiuolaikines technologijas ir laikantis modernaus dizaino principų.
 
-## How can I edit this code?
+**URL**: https://roqusanalytics.lt
 
-There are several ways of editing your application.
+## Svetainės struktūra
 
-**Use Lovable**
+Svetainę sudaro šie pagrindiniai puslapiai:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c7313f04-12f2-4e1a-b5e7-2080d22e4aea) and start prompting.
+1. **Pagrindinis puslapis** - pristato Roqus Analytics paslaugas ir pagrindinę vertę
+2. **Paslaugos (Services)** - detaliai aprašo teikiamas paslaugas
+3. **Kaip tai veikia?** - paaiškina duomenų analitikos procesą
+4. **Naudojimo atvejai (Use Cases)** - pateikia konkrečius duomenų analitikos pritaikymo pavyzdžius
+5. **DUK (FAQ)** - atsako į dažniausiai užduodamus klausimus
+6. **Apie mus** - pristato įmonę ir jos misiją
+7. **Susisiekti (Contact Sales)** - kontaktų forma
 
-Changes made via Lovable will be committed automatically to this repo.
+## Pagrindinės paslaugos
 
-**Use your preferred IDE**
+Roqus Analytics teikia šias pagrindines paslaugas:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Power BI Ataskaitų ir Dashboardų Kūrimas** - interaktyvių ataskaitų ir vizualių dashboardų kūrimas
+- **Power BI Ataskaitų Nuoma ir Priežiūra** - ataskaitų kūrimas pagal kliento reikalavimus ir periodinė priežiūra
+- **Duomenų Valymas ir ETL Procesai** - duomenų paruošimas analizei
+- **SQL Duomenų Bazių Optimizavimas** - duomenų bazių kūrimas ir optimizavimas
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technologijos
 
-Follow these steps:
+Šis projektas sukurtas naudojant:
+
+- **Vite** - greitas ir modernus kūrimo įrankis
+- **TypeScript** - tipizuota JavaScript kalba
+- **React** - UI biblioteka
+- **shadcn-ui** - komponentų biblioteka
+- **Tailwind CSS** - utility-first CSS karkasas
+- **React Flow** - interaktyvių diagramų kūrimui
+- **React Diagrams** - sudėtingesnėms diagramoms
+- **D3.js** - pažangioms duomenų vizualizacijoms
+
+## Dizaino gairės
+
+Svetainės dizainas remiasi šiomis pagrindinėmis gairėmis:
+
+- **Stilius**: Modernus, minimalistinis Notion/Linear stilius
+- **Spalvų paletė**: Violetinė akcentinė spalva, šviesūs gradientiniai fonai
+- **Tipografija**: Standartizuoti šriftų dydžiai (antraštės 40px, paantraštės 20px)
+- **Komponentai**: Kvadratiniai su užapvalintais kampais, centruotas tekstas
+- **Animacijos**: Subtilios animacijos, akcentinės linijos navigacijoje
+
+Detalesnę dizaino informaciją rasite [design.md](./design.md) dokumente.
+
+## Svetainės turinys
+
+Svetainės turinys remiasi duomenų analitikos vertės pristatymu verslui:
+
+- **Finansinė nauda**: 0-30% produktyvumo augimas, 42% pardavimų vadovų viršija ROI
+- **Strateginė nauda**: PwC tyrimas rodo 3× geresnius sprendimus
+- **Kodėl tai naudinga**: Tikslesni sprendimai, efektyvesni procesai, stipresnis verslo pamatas
+
+Detalų svetainės turinį rasite [roqusanalytics_content.md](./roqusanalytics_content.md) dokumente.
+
+## Projekto paleidimas
+
+Norėdami paleisti projektą lokaliai:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Klonuokite repozitoriją
+git clone <PROJEKTO_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Pereikite į projekto direktoriją
+cd Roqus_new
 
-# Step 3: Install the necessary dependencies.
+# 3. Įdiekite reikalingas priklausomybes
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Paleiskite vystymo serverį
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Kontaktai
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Roqus, MB  
+📧 contact@roqus.lt  
+📞 +370 629 06888
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c7313f04-12f2-4e1a-b5e7-2080d22e4aea) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+© 2023-2024 by roqusanalytics.lt. Sukurta Roqus, MB

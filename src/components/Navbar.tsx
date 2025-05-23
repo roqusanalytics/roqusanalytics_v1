@@ -142,11 +142,15 @@ const Navbar = () => {
       <div className="nexos-container">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-[#262B30] flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-nexos-purple to-nexos-purple-dark flex items-center justify-center">
-                <span className="text-[#FFFFFF] font-bold">R</span>
+            <Link to="/" className="text-2xl font-bold text-[#262B30] flex items-center gap-2 group">
+              <div className="w-48 h-12 flex items-center justify-center relative overflow-visible">
+                <img
+                  src="/logo-notion-analytics-large.svg"
+                  alt="Roqus Analytics Logo"
+                  className="w-full h-full transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute -inset-1 bg-[#4285F4]/10 rounded-lg opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-300"></div>
               </div>
-              RoqusAnalytics
             </Link>
           </div>
 
@@ -250,6 +254,11 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 bg-nexos-dark-light/90 backdrop-blur-lg rounded-lg p-4 animate-fade-in border border-nexos-dark-lighter shadow-lg">
             <div className="flex flex-col space-y-4">
+              <div className="flex items-center mb-2 pb-2 border-b border-nexos-dark-lighter">
+                <Link to="/" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-center w-full">
+                  <img src="/logo-notion-analytics-large.svg" alt="Roqus Analytics Logo" className="h-12 w-48" />
+                </Link>
+              </div>
               <Link
                 to="/paslaugos"
                 onClick={() => setIsMenuOpen(false)}

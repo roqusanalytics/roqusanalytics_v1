@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Šviesus fonas -->
+  <rect width="240" height="60" rx="4" fill="#F5F7FF" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0s" fill="freeze" />
+  </rect>
+  
+  <!-- Logotipo elementai -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.5s" fill="freeze" />
+    
+    <!-- Minimalistinis kvadratas su duomenų elementais -->
+    <rect x="30" y="15" width="30" height="30" rx="6" fill="#F5F7FF" stroke="#4285F4" stroke-width="2">
+      <animate attributeName="stroke-dasharray" from="120 120" to="0 120" dur="1.5s" begin="0.8s" fill="freeze" />
+      <animate attributeName="stroke-dashoffset" from="120" to="0" dur="1.5s" begin="0.8s" fill="freeze" />
+    </rect>
+    
+    <!-- Duomenų linijos -->
+    <path d="M38 30L45 25L52 35" stroke="#4285F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.5s" fill="freeze" />
+      <animate attributeName="stroke-dasharray" from="30 30" to="0 30" dur="1s" begin="1.5s" fill="freeze" />
+      <animate attributeName="stroke-dashoffset" from="30" to="0" dur="1s" begin="1.5s" fill="freeze" />
+    </path>
+    
+    <!-- Duomenų taškai -->
+    <circle cx="38" cy="30" r="2" fill="#4285F4" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.8s" fill="freeze" />
+    </circle>
+    
+    <circle cx="45" cy="25" r="2" fill="#4285F4" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2s" fill="freeze" />
+    </circle>
+    
+    <circle cx="52" cy="35" r="2" fill="#4285F4" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze" />
+    </circle>
+  </g>
+  
+  <!-- Tekstas "Roqus Analytics" -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" begin="2.3s" fill="freeze" />
+    
+    <!-- Roqus Analytics -->
+    <text x="75" y="35" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#4285F4" font-weight="500" letter-spacing="0.2">
+      Roqus Analytics
+    </text>
+  </g>
+</svg>

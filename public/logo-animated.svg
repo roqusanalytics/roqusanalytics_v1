@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Apvalus fonas su gradientu -->
+    <rect width="48" height="48" rx="12" fill="url(#circleGradient)">
+        <!-- Animacija: pulsuojantis efektas -->
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Duomenų taškai ir jungiamosios linijos -->
+    <g stroke="white" stroke-width="0.75" stroke-opacity="0.6">
+        <!-- Duomenų tinklelis -->
+        <path d="M12 12 L36 12" stroke-dasharray="1.5 1.5">
+            <animate attributeName="stroke-opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite" />
+        </path>
+        <path d="M12 18 L36 18" stroke-dasharray="1.5 1.5">
+            <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite" begin="0.5s" />
+        </path>
+        <path d="M12 24 L36 24" stroke-dasharray="1.5 1.5">
+            <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="4s" repeatCount="indefinite" begin="1s" />
+        </path>
+        <path d="M12 30 L36 30" stroke-dasharray="1.5 1.5">
+            <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite" begin="1.5s" />
+        </path>
+        <path d="M12 36 L36 36" stroke-dasharray="1.5 1.5">
+            <animate attributeName="stroke-opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite" begin="2s" />
+        </path>
+    </g>
+
+    <!-- Analitikos grafikai -->
+    <g>
+        <!-- Augantis grafikas -->
+        <path d="M12 36 L18 30 L24 33 L30 24 L36 18" stroke="white" stroke-width="2" stroke-linecap="round" fill="none">
+            <animate attributeName="stroke-dasharray" from="90 90" to="0 90" dur="2s" begin="0s" fill="freeze" />
+            <animate attributeName="stroke-dashoffset" from="90" to="0" dur="2s" begin="0s" fill="freeze" />
+        </path>
+        
+        <!-- Duomenų taškai -->
+        <circle cx="12" cy="36" r="1.5" fill="white">
+            <animate attributeName="r" values="0;1.5;1.8;1.5" dur="2s" begin="0s" fill="freeze" />
+        </circle>
+        <circle cx="18" cy="30" r="1.5" fill="white">
+            <animate attributeName="r" values="0;1.5;1.8;1.5" dur="2s" begin="0.3s" fill="freeze" />
+        </circle>
+        <circle cx="24" cy="33" r="1.5" fill="white">
+            <animate attributeName="r" values="0;1.5;1.8;1.5" dur="2s" begin="0.6s" fill="freeze" />
+        </circle>
+        <circle cx="30" cy="24" r="1.5" fill="white">
+            <animate attributeName="r" values="0;1.5;1.8;1.5" dur="2s" begin="0.9s" fill="freeze" />
+        </circle>
+        <circle cx="36" cy="18" r="1.5" fill="white">
+            <animate attributeName="r" values="0;1.5;1.8;1.5" dur="2s" begin="1.2s" fill="freeze" />
+        </circle>
+    </g>
+
+    <!-- Stulpelinė diagrama -->
+    <g>
+        <rect x="15" y="33" width="3" height="3" fill="white" opacity="0.8">
+            <animate attributeName="height" from="0" to="3" dur="1s" begin="1.5s" fill="freeze" />
+            <animate attributeName="y" from="36" to="33" dur="1s" begin="1.5s" fill="freeze" />
+        </rect>
+        <rect x="21" y="28.5" width="3" height="7.5" fill="white" opacity="0.8">
+            <animate attributeName="height" from="0" to="7.5" dur="1s" begin="1.7s" fill="freeze" />
+            <animate attributeName="y" from="36" to="28.5" dur="1s" begin="1.7s" fill="freeze" />
+        </rect>
+        <rect x="27" y="25.5" width="3" height="10.5" fill="white" opacity="0.8">
+            <animate attributeName="height" from="0" to="10.5" dur="1s" begin="1.9s" fill="freeze" />
+            <animate attributeName="y" from="36" to="25.5" dur="1s" begin="1.9s" fill="freeze" />
+        </rect>
+        <rect x="33" y="21" width="3" height="15" fill="white" opacity="0.8">
+            <animate attributeName="height" from="0" to="15" dur="1s" begin="2.1s" fill="freeze" />
+            <animate attributeName="y" from="36" to="21" dur="1s" begin="2.1s" fill="freeze" />
+        </rect>
+    </g>
+
+    <!-- Duomenų srautas -->
+    <path d="M9 24 C9 15.7157 15.7157 9 24 9 C32.2843 9 39 15.7157 39 24" 
+          stroke="white" stroke-width="0.75" stroke-opacity="0.3" stroke-dasharray="1.5 1.5">
+        <animate attributeName="stroke-dashoffset" values="0;15" dur="10s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="0 24 24" to="360 24 24" dur="30s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Pulsuojantis duomenų centras -->
+    <circle cx="24" cy="24" r="4.5" fill="url(#pulseGradient)" opacity="0.7">
+        <animate attributeName="r" values="3;4.5;3" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- RA raidės su duomenų vizualizacijos elementais -->
+    <g>
+        <!-- R raidė -->
+        <path d="M15 39 L15 27 L19.5 27 C21 27 22.5 28.5 22.5 30 C22.5 31.5 21 33 19.5 33 L22.5 33 L24 39" 
+              stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <animate attributeName="stroke-dasharray" from="45 45" to="0 45" dur="1.5s" begin="2.5s" fill="freeze" />
+            <animate attributeName="stroke-dashoffset" from="45" to="0" dur="1.5s" begin="2.5s" fill="freeze" />
+        </path>
+        
+        <!-- A raidė -->
+        <path d="M27 39 L30 27 L33 39 M27.75 36 L32.25 36" 
+              stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <animate attributeName="stroke-dasharray" from="45 45" to="0 45" dur="1.5s" begin="3s" fill="freeze" />
+            <animate attributeName="stroke-dashoffset" from="45" to="0" dur="1.5s" begin="3s" fill="freeze" />
+        </path>
+    </g>
+
+    <!-- Duomenų vizualizacijos detalės -->
+    <g stroke="white" stroke-width="0.5" stroke-opacity="0.4">
+        <!-- Vertikalios linijos -->
+        <line x1="12" y1="12" x2="12" y2="36">
+            <animate attributeName="stroke-opacity" values="0.2;0.5;0.2" dur="5s" repeatCount="indefinite" />
+        </line>
+        <line x1="18" y1="12" x2="18" y2="36">
+            <animate attributeName="stroke-opacity" values="0.2;0.5;0.2" dur="5s" repeatCount="indefinite" begin="0.5s" />
+        </line>
+        <line x1="24" y1="12" x2="24" y2="36">
+            <animate attributeName="stroke-opacity" values="0.2;0.5;0.2" dur="5s" repeatCount="indefinite" begin="1s" />
+        </line>
+        <line x1="30" y1="12" x2="30" y2="36">
+            <animate attributeName="stroke-opacity" values="0.2;0.5;0.2" dur="5s" repeatCount="indefinite" begin="1.5s" />
+        </line>
+        <line x1="36" y1="12" x2="36" y2="36">
+            <animate attributeName="stroke-opacity" values="0.2;0.5;0.2" dur="5s" repeatCount="indefinite" begin="2s" />
+        </line>
+    </g>
+
+    <!-- Gradiento apibrėžimai -->
+    <defs>
+        <linearGradient id="circleGradient" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#A78BFA">
+                <animate attributeName="stop-color" values="#A78BFA;#8B5CF6;#A78BFA" dur="6s" repeatCount="indefinite" />
+            </stop>
+            <stop offset="1" stop-color="#7C3AED">
+                <animate attributeName="stop-color" values="#7C3AED;#6D28D9;#7C3AED" dur="6s" repeatCount="indefinite" />
+            </stop>
+        </linearGradient>
+        <radialGradient id="pulseGradient" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5">
+            <stop offset="0%" stop-color="white" stop-opacity="1" />
+            <stop offset="100%" stop-color="white" stop-opacity="0.5" />
+        </radialGradient>
+    </defs>
+</svg>
